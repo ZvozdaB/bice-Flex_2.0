@@ -1,0 +1,207 @@
+
+
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.wrapper{
+	max-width: 1030px;
+	margin: 0 auto;
+	padding: 15px;
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-box-orient: vertical; 
+	-webkit-box-direction: normal; 
+	    -ms-flex-direction: column; 
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;	
+}
+
+.row_one{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.row_three{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+
+/*=========
+box style
+==========*/
+.box{
+	width: 150px;
+	height: 150px;
+	margin: 5px;
+	border: solid 5px #000;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+}
+.box__circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #000;
+	margin: 5px;
+}
+@media(max-width: 550px){
+	.box{
+		width: 100px;
+		height: 100px;
+		padding: 10px;
+	}
+	.box__circle{
+		width: 20px;
+		height: 20px;
+		margin: 0px;
+	}
+}
+
+/*=======
+side of the cube with the number of circles 6
+*/
+
+.box-6{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.box-6 .box__container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+/*=======
+side of the cube with the number of circles 2
+*/
+.box-2{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.box-2 .box__container:last-child{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+/*======
+side of the cube with the number of circles 5
+*/
+.box-5{
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.box-5 .box__container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.box-5 .box__container:nth-child(2){
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+/*=======
+side of the cube with the number of circles 3
+*/
+.box-3{
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
+}
+.box-3 .box__container{
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.box-3 .box__container:nth-child(2){
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.box-3 .box__container:nth-child(3){
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+/*========
+side of the cube with the number of circles 4
+*/
+.box-4{
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
+}
+.box-4 .box__container{
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+/*======
+side of the cube with the number of circles 1
+*/
+.box-1{
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
